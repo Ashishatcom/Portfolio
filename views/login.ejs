@@ -1,0 +1,130 @@
+<%- include('header') -%>
+<style>
+body {
+            background: #000 !important;
+        }
+        .card {
+            border: 1px solid #28a745;
+        }
+        .card-login {
+            margin-top: 130px;
+            padding: 18px;
+            max-width: 30rem;
+        }
+
+        .card-header {
+            color: #fff;
+            /*background: #ff0000;*/
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: 600 !important;
+            margin-top: 10px;
+            border-bottom: 0;
+        }
+
+        .input-group-prepend span{
+            width: 50px;
+            background-color: #ff0000;
+            color: #fff;
+            border:0 !important;
+        }
+
+        input:focus{
+            outline: 0 0 0 0  !important;
+            box-shadow: 0 0 0 0 !important;
+        }
+
+        .login_btn{
+            width: 130px;
+        }
+
+        .login_btn:hover{
+            color: #fff;
+            background-color: #ff0000;
+        }
+
+        .btn-outline-danger {
+            color: #fff;
+            font-size: 18px;
+            background-color: #28a745;
+            background-image: none;
+            border-color: #28a745;
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            height: calc(2.25rem + 2px);
+            padding: 0.375rem 0.75rem;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #28a745;
+            background-color: transparent;
+            background-clip: padding-box;
+            border: 1px solid #28a745;
+            border-radius: 0;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+
+        .input-group-text {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 0.375rem 0.75rem;
+            margin-bottom: 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.6;
+            color: #495057;
+            text-align: center;
+            white-space: nowrap;
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 0;
+        }
+        .ib_container{
+            padding-bottom: 120px;
+        }
+</style>
+<div class="container ib_container">
+    <div class="card card-login mx-auto text-center bg-dark">
+        <div class="card-header mx-auto bg-dark">
+            <span> <svg height="100" viewBox="0 0 64 64" width="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="New_Gradient_Swatch_1" gradientUnits="userSpaceOnUse" x1="32" x2="32" y1=".412" y2="64.75"><stop offset="0" stop-color="#fff33b"/><stop offset=".014" stop-color="#fee72e"/><stop offset=".042" stop-color="#fed51b"/><stop offset=".07" stop-color="#fdca10"/><stop offset=".1" stop-color="#fdc70c"/><stop offset=".4" stop-color="#f3903f"/><stop offset=".8" stop-color="#ed683c"/><stop offset="1" stop-color="#e93e3a"/></linearGradient><linearGradient id="New_Gradient_Swatch_1-2" x1="27" x2="27" xlink:href="#New_Gradient_Swatch_1" y1=".412" y2="64.75"/><linearGradient id="New_Gradient_Swatch_1-3" x1="7" x2="7" xlink:href="#New_Gradient_Swatch_1" y1=".412" y2="64.75"/><linearGradient id="New_Gradient_Swatch_1-4" x1="11" x2="11" xlink:href="#New_Gradient_Swatch_1" y1=".412" y2="64.75"/><linearGradient id="New_Gradient_Swatch_1-5" x1="15" x2="15" xlink:href="#New_Gradient_Swatch_1" y1=".412" y2="64.75"/><linearGradient id="New_Gradient_Swatch_1-6" x1="47" x2="47" xlink:href="#New_Gradient_Swatch_1" y1=".412" y2="64.75"/><path d="m59 2h-44a3 3 0 0 0 -3 3v2h-2a3 3 0 0 0 -3 3v2h-2a3 3 0 0 0 -3 3v44a3 3 0 0 0 3 3h44a3 3 0 0 0 3-3v-2h2a3 3 0 0 0 3-3v-2h2a3 3 0 0 0 3-3v-44a3 3 0 0 0 -3-3zm-45 3a1 1 0 0 1 1-1h44a1 1 0 0 1 1 1v5h-3a3 3 0 0 0 -3-3h-40zm-5 5a1 1 0 0 1 1-1h44a1 1 0 0 1 1 1v5h-3a3 3 0 0 0 -3-3h-40zm-4 4h44a1 1 0 0 1 1 1v5h-46v-5a1 1 0 0 1 1-1zm44 46h-44a1 1 0 0 1 -1-1v-37h46v37a1 1 0 0 1 -1 1zm5-5h-2v-38h3v37a1 1 0 0 1 -1 1zm5-5h-2v-38h3v37a1 1 0 0 1 -1 1z" fill="url(#New_Gradient_Swatch_1)"/><path d="m43 30h-22.028a.978.978 0 0 1 -.972-1 3 3 0 0 0 -3-3h-6a3 3 0 0 0 -3 3v24a3 3 0 0 0 3 3h32a3 3 0 0 0 3-3v-20a3 3 0 0 0 -3-3zm-33 23v-24a1 1 0 0 1 1-1h6a1.008 1.008 0 0 1 1 1.031 2.974 2.974 0 0 0 2.972 2.969h22.028a1 1 0 0 1 1 1v1h-29.03a2.974 2.974 0 0 0 -2.97 2.97v17.03h-1a1 1 0 0 1 -1-1zm33 1h-29v-17.03a.971.971 0 0 1 .97-.97h29.03v17a1 1 0 0 1 -1 1z" fill="url(#New_Gradient_Swatch_1-2)"/><path d="m6 16h2v2h-2z" fill="url(#New_Gradient_Swatch_1-3)"/><path d="m10 16h2v2h-2z" fill="url(#New_Gradient_Swatch_1-4)"/><path d="m14 16h2v2h-2z" fill="url(#New_Gradient_Swatch_1-5)"/><path d="m46 16h2v2h-2z" fill="url(#New_Gradient_Swatch_1-6)"/></svg> </span><br/>
+                        <span class="logo_title mt-5"> Login Dashboard </span>
+
+                        <% if (typeof errors !== 'undefined'){errors.forEach(function(error){%>
+ 
+                            <div class="alert alert-danger"><%= error.message %></div>
+                         
+                         
+                            <% })} %>
+            
+            
+
+        </div>
+        <div class="card-body">
+            <form action="/users/login" method="post">
+                <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    </div>
+                    <input type="text" name="username" class="form-control" placeholder="Username">
+                </div>
+
+                <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                    </div>
+                    <input type="password" name="password" class="form-control" placeholder="Password">
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" name="btn" value="Login" class="btn btn-outline-danger float-right login_btn">
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<%- include('footer') -%>
