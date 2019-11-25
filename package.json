@@ -19,6 +19,7 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "jade-bootstrap": "^1.0.14",
+    "messagebird": "^3.3.0",
     "moment": "^2.24.0",
     "mongodb": "*",
     "mongoose": "*",
@@ -28,6 +29,7 @@
     "passport": "*",
     "passport-http": "*",
     "passport-local": "*",
-    "serve-favicon": "^2.5.0"
+    "serve-favicon": "^2.5.0",
+    "speakeasy": "^2.0.0"
   }
 }

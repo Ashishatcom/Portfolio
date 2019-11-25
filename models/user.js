@@ -51,3 +51,13 @@ module.exports.createUser = function(newUser,callback){
    });
    });
 }
+
+
+
+
+module.exports.createUser = function(newpostUser,callback){
+ 
+   newpostUser.save(callback);
+   }
+
+

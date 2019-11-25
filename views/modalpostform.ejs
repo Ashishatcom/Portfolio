@@ -1,0 +1,40 @@
+<div id="ModalLoginForm" class="modal fade">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title">Login</h1>
+            </div>
+            <div class="modal-body">
+                <form role="form" method="POST" action="/users/post" enctype="multipart/form-data">
+                    <input type="hidden" name="_token" value="">
+                    <div class="form-group">
+                        <label class="control-label">Title</label>
+                        <div>
+                            <input type="text" class="form-control input-lg" name="posttitle" value="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Content</label>
+                        <div>
+                            <input type="text" class="form-control input-lg" name="bodycontent">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">Featur Image</label>
+                        <div>
+                            <input type="file" class="form-control input-lg" name="featureimage">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div>
+                            <button type="submit" class="btn btn-success">Publish</button>
+ 
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
