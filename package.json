@@ -20,7 +20,7 @@
     "jade": "~1.11.0",
     "jade-bootstrap": "^1.0.14",
     "messagebird": "^3.3.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "mongodb": "*",
     "mongoose": "*",
     "morgan": "~1.9.1",
